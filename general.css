@@ -32,7 +32,7 @@ body {
     }
 
 @media (max-width:992px) {
-    .w3-sidebar.w3-collapse {
+    .w3-sidebar {
         display: none
     }
 }
