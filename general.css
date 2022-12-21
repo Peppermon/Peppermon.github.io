@@ -34,6 +34,7 @@ body {
 @media (max-width:992px) {
     .w3-sidebar.w3-collapse {
         display: none
+    }
 }
   
   .w3-top, .w3-bottom {
