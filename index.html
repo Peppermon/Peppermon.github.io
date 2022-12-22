@@ -3,27 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="general.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="general.js" type="text/javascript"></script>
   </head>
   
-  <body>
-    
-    <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;">
-        <details>
-            <summary>Stadium</summary>
-            <ul>
-                <li>Stadium 1</li>
-                <li>Stadium 2</li>
-            </ul>
-
-        </details>
-
-
-    </nav>
-    <div class="text-center">
-    Home page
-
-    Action Link
-    
-</div>
+  <body style="display:flex; flex-direction:row">
+	  
+	  <div style="display:flex;align-items:stretch;">
+		<nav class="w3-sidebar w3-collapse w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;">
+			<span id="stadium" class="collapse">Stadium</span>
+			<ul id="stadium-list">
+				<li>
+					<span id="stadium-1" class="collapse">PMS1</span>
+					<ul id="stadium-1-list">
+						<li>Level 30</li>
+						<li>Level 50</li>
+					</ul>
+				</li>
+				<li>PMS2 / Stadium 1</li>
+				<li>Stadium 2</li>
+				<li>Battle Revolution</li>
+			</ul>
+			<span id="mysterydungeon" class="collapse">Mystery Dungeon</span>
+			<ul id="mysterydungeon-list">
+				<li>
+					<span id="mysterydungeon-1" class="collapse">Rescue Team</span>
+					<ul id="mysterydungeon-1-list">
+						<li>Boss Data</li>
+						<li>Friend Areas</li>
+					</ul>
+				</li>
+				<li>Explorers</li>
+				<li>Adventure Squad</li>
+			</ul>
+		</nav>
+	  </div>
+	  
+	  <div>
+		Home page
+	  </div>
+	  
+	
   </body>
 </html>
