@@ -42,8 +42,9 @@ $(document).ready(function() {
 		var listArray = localStorage.getItem("list").split(",");
 		listArray.forEach(item => {
 			var docItem = $("#" + item);
-			toggleSign(docItem);
+			var docPrev = $(docItem.prev());
 			docItem.toggle();
+			toggleSign(docPrev[0]);
 		});
 	}
 		
