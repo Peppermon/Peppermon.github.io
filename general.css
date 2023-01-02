@@ -1,29 +1,48 @@
 .side-bar {
-  width: 40ex;
-  height: 95vh;
-  position: fixed;
-  transition: all 0.5s ease;
-  top: 0;
-  border-right: 1px solid black;
-  text-align: right;
-  overflow-y: scroll;
+	position: fixed;
+	transition: all 0.5s ease;
+	top: 0;
+	border-right: 1px solid black;
+	text-align: right;
+	width: 40ex;
+	height: 95vh;
+	overflow-y: scroll;
 }
 .side-bar.bar-collapse {
-  width: 4ex;
-  overflow-y: hidden;
+	width: 4ex;
+	overflow-y: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+	.hamburger, .closebtn {
+		display: block;
+	}
+	
+	.expand {
+		display: none;
+	}
+	
+	.bar-collapse {
+		display: none;
+	}
+	.side-bar {
+		width:100%;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	.hamburger, .closebtn {
+		display: none;
+	}
+	
+	.expand {
+		display: inline;
+	}
 }
 
 .expand {
 	font-weight: bold;
 	font-size: 20px;
-}
-
-.navigation {
-	display: block;
-}
-
-.navigation.bar-collapse {
-	display: none;
 }
 
 #main-switch {
